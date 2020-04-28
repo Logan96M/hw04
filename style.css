@@ -1,0 +1,89 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --hue-neutral: 200; /* Background color  */
+    --hue-wrong: 0;
+    --hue-correct: 145;
+
+}
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);/* using --hue-neutral  */
+    
+}
+
+body.correct{
+    --hue: var(--hue-correct);
+}
+
+body.wrong{
+    --hue: var(--hue-wrong);
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 22px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    border: 2px solid rgb(23, 112, 196);
+
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    
+    margin: 20px 0; /* 20px top/bottom and 0px left right */
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: hsl(var(--hue), 100%, 50%);
+    border: 1px solid rgba(0, 83, 236, 0.63);
+    color: whitesmoke;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.75rem; /*1 rem = 16px on normal HTML roots i think  */
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
