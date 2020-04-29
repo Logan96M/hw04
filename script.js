@@ -78,8 +78,11 @@ function selectAnswer(e) {
 function setStatusClass(element, correct){
     clearStatusClass(element)
     if (correct){
+        
         element.classList.add('correct')
     } else {
+
+  
         element.classList.add('wrong')
     }
 }
@@ -91,67 +94,55 @@ function clearStatusClass(element){
 
 const questions = [
     {
-       question: 'what is 2 plus 2',
+       question: "what is Shari and Logan's birthday?",
        answers: [
-           { text: '4', correct: true},
-           {text: '22', correct: false },
-           {text: '22', correct: false }
+           { text: 'Janurary 8', correct: true},
+           {text: 'November 13', correct: false },
+           {text: 'April 1', correct: false }
        ]
     },
     {
         question: 'what is 10 plus 2',
         answers: [
-            { text: '4', correct: true},
+            { text: '12', correct: true},
             { text: '22', correct: false },
-            { text: '22', correct: false }
+            { text: '14', correct: false }
         ]
      },
      {
-        question: 'what is 8 minus 4',
+        question: "What is Peyton's favorite color?",
         answers: [
-            { text: '4', correct: true},
-            {text: '22', correct: false },
-            {text: '22', correct: false }
+            
+            {text: 'Red', correct: false },
+            {text: 'Yellow', correct: false },
+            { text: 'Blue', correct: true}
         ]
      },
      {
-        question: 'what is 1 plus 3',
+        question: 'what grade is Taylor in?',
         answers: [
-            { text: '4', correct: true},
-            {text: '22', correct: false },
-            {text: '22', correct: false }
+            {text: '6th', correct: false },
+            { text: '9th', correct: true},
+            { text: 'She already graduated', correct: false}
+            
         ]
      },
      {
-        question: 'what is 2 plus 2',
+        question: "When did XXXtentacion pass",
         answers: [
-            { text: '4', correct: true},
-            {text: '22', correct: false },
-            {text: '22', correct: false }
+            {text: '2017', correct: false },
+            { text: '2018', correct: true},
+            {text: '2009', correct: false },
+            {text: '2020', correct: false }
         ]
      },
      {
-        question: 'what is 2 plus 2',
+        question: "how many national parks are in the U.S.A.",
         answers: [
-            { text: '4', correct: true},
-            {text: '22', correct: false },
-            {text: '22', correct: false }
-        ]
-     },
-     {
-        question: 'what is 2 plus 2',
-        answers: [
-            { text: '4', correct: true},
-            {text: '22', correct: false },
-            {text: '22', correct: false }
-        ]
-     },
-     {
-        question: 'what is 2 plus 2',
-        answers: [
-            { text: '4', correct: true},
-            {text: '22', correct: false },
-            {text: '22', correct: false }
+            {text: '57', correct: false },
+            { text: '419', correct: true},
+            {text: '88', correct: false },
+            {text: '666', correct: false }
         ]
      },
 ]
